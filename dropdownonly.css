@@ -1,0 +1,30 @@
+
+
+
+#navbar, #navbar ul {	display:block;
+						margin:0;
+						padding:0;
+						list-style:none;}
+
+
+#navbar a {				display:block;
+						width:10em;}
+
+
+
+#navbar li 			{	float:left; 				
+						width:10em;
+						}
+
+#navbar li ul 		{	display:none}
+
+
+#navbar li:hover ul{position:absolute;display:block;
+					width:10.1em;}
+					
+#navbar li ul li {	float:none;
+					width: auto;
+					}
+
+
+div.content {clear:left; padding-top:5%;}
