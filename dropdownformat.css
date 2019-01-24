@@ -1,0 +1,36 @@
+body {background: #BFAFF9; font-family:Trebuchet MS;margin:10px}
+
+						
+a:link, a:visited {		text-decoration:none;
+						color:#d24c03}
+						
+
+						
+#navbar li 			{	
+						background:#F8DACA;
+						text-align:left;
+						padding-left:4px}
+
+
+
+
+#navbar li:hover {	border-left:.1em solid #f86210;
+					padding-left:2px}
+
+#navbar li:hover ul{
+					background:#F8DACA;
+					border-bottom:.1em solid #F86210;
+					border-left:.15em solid #F86210;
+					margin-left:-.25em;
+					}
+					
+#navbar li ul li {	font-size:85%}
+					
+#navbar li:hover ul li {border:none;
+						padding:4px}
+						
+#navbar a:hover {		text-decoration:underline}
+
+
+
+div.content {margin-left:5%}
