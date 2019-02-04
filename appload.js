@@ -8,7 +8,7 @@ var appArray=[
 
 ];
 
-function installApp(name,url){
+function installApp(name,url){alert(appArray);
   appArray.push({name:name,url:url});
   localStorage.setItem("apps",JSON.stringify(appArray));
 
