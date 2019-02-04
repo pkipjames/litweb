@@ -8,7 +8,7 @@ var appArray=[
 
 ];
 
-function installApp(name,url){alert(appArray);
+function installApp(name,url){
   appArray.push({name:name,url:url});
   localStorage.setItem("apps",JSON.stringify(appArray));
 
@@ -29,6 +29,7 @@ function elt(name, attributes) {
   return node;
 }
 function runAppMenu(){try{
+alert(appArray);
 var container=document.querySelector("#appsMenu");
 if(localStorage.getItem("apps")){
 appArray=JSON.parse(localStorage.getItem("apps"));
@@ -36,7 +37,7 @@ appArray=JSON.parse(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));
 }
 
-
+alert(appArray);
 appArray.forEach(function (item){container.appendChild(elt("li",null,elt("a",{href:item.url,target:"appwindow"},item.name)));});
 }catch(err){alert(err);}
 
