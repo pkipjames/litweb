@@ -3,7 +3,8 @@ var appArray=[
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
-{name:"Alexa",url:"https://alexaweb.herokuapp.com/"}
+{name:"Alexa",url:"https://alexaweb.herokuapp.com/"},
+  {name:"App Store",url:"install.html")
 
 ];
 
