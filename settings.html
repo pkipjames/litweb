@@ -7,6 +7,7 @@
 <script type="text/javascript" src="appload.js"></script>
 </head>
 <body>
-<label for="autoFullScreen">Automatically go fullscreen on page load: </label><input id="autoFullScreen" type="checkbox" onclick="localStorage.setItem('autoFS',this.checked);" />
+<button onclick="localStorage.setItem('autoFS',window.confirm('Auto Fullscreen'));">Auto Fullscreen</button>
+<button onclick="localStorage.clear();">Reset</button>
 </body>
 </html>
