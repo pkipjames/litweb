@@ -1,5 +1,5 @@
 var appArray=[
-{name:"VistaSimulator",url:"http://vistasimulator.com/vista.php#"},
+{name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game1.html"},
