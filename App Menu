@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Store</title>
+<link rel="stylesheet" href="theme.css" />
+<script type="text/javascript" src="appload.js"></script>
+</head>
+<body onload="runAppMenu();">
+<h1>Apps</h1>
+<ul id="appsMenu"></ul>
+</body>
+</html>
