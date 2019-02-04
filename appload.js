@@ -14,6 +14,7 @@ function checkFS(){
   }}
 }
 function installApp(name,url){
+  localStorage.setItem("apps",JSON.stringify(appArray));
   appArray.push({name:name,url:url});
   localStorage.setItem("apps",JSON.stringify(appArray));
 
