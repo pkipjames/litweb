@@ -2,9 +2,16 @@ var appArray=[
 {name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
-{name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game1.html"},
+{name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
 {name:"Alexa",url:"https://alexaweb.herokuapp.com/"}
+
 ];
+
+function installApp(name,url){
+  appArray.push({name:name,url:url});
+  localStorage.setItem("apps",JSON.stringify(appArray));
+
+}
 function elt(name, attributes) {
   var node = document.createElement(name);
   if (attributes) {
