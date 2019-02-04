@@ -7,7 +7,11 @@ var appArray=[
   {name:"App Store",url:"install.html"}
 
 ];
-
+function checkFS(){
+  if(localStorage.getItem("autoFS")){if(localStorage.getItem("autoFS")=="true"){
+    var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();
+  }}
+}
 function installApp(name,url){
   appArray.push({name:name,url:url});
   localStorage.setItem("apps",JSON.stringify(appArray));
