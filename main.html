@@ -35,9 +35,13 @@
 		}
 		
 	</script>
+	<script type="text/javascript">
+				addEventListener("fullscreenchange",function (){resizeOS();});
+
+	</script>
 	<link rel="stylesheet" href="theme.css" />
 </head>
-<body onload="setTimeout(function (){runAppMenu();resizeOS();},100);" onorientationchange="resizeOS();">
+<body onload="setTimeout(function (){runAppMenu();resizeOS();},100);" onorientationchange="resizeOS();" onresize="resizeOS();">
 
 
 <div id="navbar">
