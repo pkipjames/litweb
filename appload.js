@@ -1,5 +1,8 @@
 var appArray=[
-{name:"Malone Browser",url:"malone.html"}
+{name:"Malone Browser",url:"malone.html"},
+  {name:"VistaSimulator",url:"http://vistasimulator.com/vista.php#"},
+  {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
+  {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game1.html"}
 
 ];
 function elt(name, attributes) {
