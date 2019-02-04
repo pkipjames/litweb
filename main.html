@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<title>Setting All List-Style Properties at Once</title>
+<title>WebOS</title>
 <link rel="stylesheet" type="text/css" media="screen" href="dropdownonly.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="dropdownformat.css" />
  <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,6 +32,7 @@
 		}
 		
 	</script>
+	<link rel="stylesheet" href="theme.css" />
 </head>
 <body onload="runAppMenu();resizeOS();" onorientationchange="resizeOS();">
 
@@ -48,6 +49,9 @@
 </ul></div>
 
 	<a href="desktop.html" target="appwindow"><button>Desktop</button></a>
-	<iframe name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
+	<button onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.back();">Back</button>
+	<button onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
+
+	<iframe src="desktop.html" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 </body>
 </html>
