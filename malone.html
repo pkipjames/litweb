@@ -2,6 +2,24 @@
 <html>
    <head>
       <title>Malone- A lightweight web browser</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="mobile-web-app-status-bar-style" content="black" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="icon" href="icon.png" />
+
+<link rel="apple-touch-icon" href="icon.png" />
+
+<link rel="apple-touch-startup-image" href="icon.png" />
+
+<link rel="touch-icon" href="icon.png" />
+
+<link rel="touch-startup-image" href="icon.png" />
+
+<link rel="shortcut-icon" href="icon.png" />
+<meta name="keywords" content="malone,web,browser,site,bing,webapp,pkip" />
+      
       <script>
       function resizeContent(){ var data331=document.getElementById("datacontent"); data331.setAttribute("height",window.innerHeight-50); data331.setAttribute("width",window.innerWidth); }
       function loadSite(url){ url=new String(url); var extraprefixes=[{name:"search:",content:"http://www.bing.com/search?q="}]; for (var j=0;j<extraprefixes.length;j++){ var prefix=extraprefixes[j]; if(url.indexOf(prefix.name)==0){ url=url.replace(prefix.name,prefix.content); break; } } resizeContent(); document.getElementById("datacontent").setAttribute("src",url); } 
