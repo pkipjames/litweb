@@ -6,7 +6,7 @@
 <script type="text/javascript" src="appload.js"></script>
 </head>
 <body>
-<input type="text/javascript" onblur="var data=JSON.parse(this.value);installApp(data.name,data.value);" placeholder="Insert App Launcg JSON code" />
+<input type="text/javascript" onblur="var data=JSON.parse(this.value);installApp(data.name,data.value);" placeholder="Insert App Launch JSON code" />
 <button onclick="var name=window.prompt('App Name');var url=window.prompt('App URL');if(name&&url){installApp(name,url);}">Install App By URL</button>
 
 </body>
