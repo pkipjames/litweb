@@ -7,41 +7,47 @@
 <title>Setting All List-Style Properties at Once</title>
 <link rel="stylesheet" type="text/css" media="screen" href="dropdownonly.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="dropdownformat.css" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="mobile-web-app-status-bar-style" content="black" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="icon" href="icon.png" />
 
+<link rel="apple-touch-icon" href="icon.png" />
+
+<link rel="apple-touch-startup-image" href="icon.png" />
+
+<link rel="touch-icon" href="icon.png" />
+
+<link rel="touch-startup-image" href="icon.png" />
+
+<link rel="shortcut-icon" href="icon.png" />
+	<meta name="keywords" content="webos,web,os,pkip,operating system" />
+	<script type="text/javascript" src="appload.js"></script>
+	<script type="text/javascript">
+		function resizeOS(){
+			var f=document.querySelector("#appwindow1");
+			f.setAttribute("width",window.innerWidth);
+		}
+		
+	</script>
 </head>
-<body>
+<body onload="runAppMenu();resizeOS();" onorientationchange="resizeOS();">
 
 
 <div id="navbar">
 <ul>
-<li><a href="page.html">Products</a>
-	<ul>
-	<li><a href="page.html" title="PageWhacker Data Sheet">PageWhacker 13.1</a></li>
-	<li><a href="page.html" title="InstaWeb Data Sheet">InstaWeb 4.0</a></li>
-	<li><a href="page.html" title="BookWriter Data Sheet">BookWriter 1.0 (beta)</a></li>
+<li><a href="page.html">Apps</a>
+	<ul id="appsMenu">
+	
 	</ul></li>
 	
-<li><a href="page.html">Support</a>
-	<ul>
-	<li><a href="help.html">Online Forum</a></li>
-	<li><a href="help.html">Contact Us</a></li>
-	</ul>
-</li>
-<li><a href="page.html">Downloads</a>
-	<ul>
-	<li><a href="help.html">Updates</a></li>
-	<li><a href="help.html">Demos</a></li>
-	</ul>
-</li>
+
 
 </ul></div>
 
-
-<div class="content">
-<h1>PageWhacker Incorporated</h1>
-<p>PageWhacker Incorporated, founded in 1995, is dedicated to creating the kind of products that you need. PageWhacker 13.1, our flagship program, can layout your magazine and pamphlets with a single click. InstaWeb brings the power of PageWhacker to the World Wide Web, converting your full length books into multi-tiered, interactive Web sites with a single mouse stroke.</p>
-
-<p>Finally, BookWriter, our newest program, scheduled to reach Candidate status by the end of the month, is the fruit of our extensive research into ideas and brainstorming management. With just two variables, BookWriter can output a paperback novel, historical novel, or nineteenth century classic.</p>
-</div>
+	<a href="desktop.html" target="appwindow"><button>Desktop</button></a>
+	<iframe name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 </body>
 </html>
