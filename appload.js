@@ -16,14 +16,14 @@ function checkFS(){
 }
 function installApp(name,url){
   appArray=JSON.parse(localStorage.getItem("apps"));
-  alert(JSON.stringify(appArray));
+  console.log(JSON.stringify(appArray));
   localStorage.setItem("apps",JSON.stringify(appArray));
   appArray.push({name:name,url:url});
-    alert(JSON.stringify(appArray));
+    console.log(JSON.stringify(appArray));
 
   localStorage.setItem("apps",JSON.stringify(appArray));
   
-  alert(JSON.stringify(appArray));
+  console.log(JSON.stringify(appArray));
 
 }
 function elt(name, attributes) {
@@ -43,10 +43,10 @@ function elt(name, attributes) {
 }
 function runAppMenu(){try{
 var container=document.querySelector("#appsMenu");
-if(localStorage.getItem("apps")){alert(localStorage.getItem("apps"));
+if(localStorage.getItem("apps")){console.log(localStorage.getItem("apps"));
 appArray=JSON.parse(localStorage.getItem("apps"));
 }else{alert(localStorage.getItem("apps"));
-localStorage.setItem("apps",JSON.stringify(appArray));alert(localStorage.getItem("apps"));
+localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
 appArray.forEach(function (item){container.appendChild(elt("li",null,elt("a",{href:item.url,target:"appwindow"},item.name)));});
