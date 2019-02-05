@@ -45,7 +45,7 @@ function runAppMenu(){try{
 var container=document.querySelector("#appsMenu");
 if(localStorage.getItem("apps")){console.log(localStorage.getItem("apps"));
 appArray=JSON.parse(localStorage.getItem("apps"));
-}else{alert(localStorage.getItem("apps"));
+}else{console.log(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
