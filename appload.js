@@ -28,6 +28,11 @@ function checkFS(){
     var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();
   }}
 }
+function setBG(){
+  if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")"')";
+                                    document.body.style.backgroundSize="cover";
+                                    
+}
 function installApp(name,url){
   appArray=JSON.parse(localStorage.getItem("apps"));
   console.log(JSON.stringify(appArray));
