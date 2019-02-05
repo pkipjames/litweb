@@ -16,9 +16,14 @@ function checkFS(){
 }
 function installApp(name,url){
   appArray=JSON.parse(localStorage.getItem("apps"));
+  alert(JSON.stringify(appArray));
   localStorage.setItem("apps",JSON.stringify(appArray));
   appArray.push({name:name,url:url});
+    alert(JSON.stringify(appArray));
+
   localStorage.setItem("apps",JSON.stringify(appArray));
+  
+  alert(JSON.stringify(appArray));
 
 }
 function elt(name, attributes) {
