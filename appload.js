@@ -6,9 +6,23 @@ var appArray=[
 {name:"Alexa",url:"https://alexaweb.herokuapp.com/"},
   {name:"App Store",url:"install.html"},
   {name:"Settings",url:"settings.html"},
-  {name:"CB.VU terminal",url:"http://cb.vu"}
+  {name:"CB.VU terminal",url:"http://cb.vu"},
+  {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
+{name:"Web Dictaphone",url:"recordaudio.html"},
+  {name:"Camera",url:"https://webcamera.io/"},
+  {name:"Feedly RSS Reader",url:"https://feedly.com/"},
+  {name:"Appetize.io Mobile Emulator",url:"https://appetize.io/"},
+  {name:"Mail.com",url:"http://www.mail.com"}
 
 ];
+function importJS(url){
+  var scr=document.createElement("script");
+  scr.setAttribute("src",url);
+  scr.setAttribute("type","text/javascript");
+  document.head.appendChild(scr);
+  return scr;
+}
+
 function checkFS(){
   if(localStorage.getItem("autoFS")){if(localStorage.getItem("autoFS")=="true"){
     var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();
@@ -49,7 +63,7 @@ appArray=JSON.parse(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
-appArray.forEach(function (item){container.appendChild(elt("li",null,elt("a",{href:item.url,target:"appwindow"},item.name)));});
+appArray.forEach(function (item){if(item.js){container.appendChild(elt("li",null,elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",null,elt("a",{href:item.url,target:"appwindow"},item.name)));}});
 }catch(err){alert(err);}
 
 }
