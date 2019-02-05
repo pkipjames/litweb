@@ -5,7 +5,8 @@ var appArray=[
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
 {name:"Alexa",url:"https://alexaweb.herokuapp.com/"},
   {name:"App Store",url:"install.html"},
-  {name:"Settings",url:"settings.html"}
+  {name:"Settings",url:"settings.html"},
+  {name:"CB.VU terminal",url:"http://cb.vu"}
 
 ];
 function checkFS(){
@@ -36,10 +37,10 @@ function elt(name, attributes) {
 }
 function runAppMenu(){try{
 var container=document.querySelector("#appsMenu");
-if(localStorage.getItem("apps")){
+if(localStorage.getItem("apps")){alert(localStorage.getItem("apps"));
 appArray=JSON.parse(localStorage.getItem("apps"));
-}else{
-localStorage.setItem("apps",JSON.stringify(appArray));
+}else{alert(localStorage.getItem("apps"));
+localStorage.setItem("apps",JSON.stringify(appArray));alert(localStorage.getItem("apps"));
 }
 
 appArray.forEach(function (item){container.appendChild(elt("li",null,elt("a",{href:item.url,target:"appwindow"},item.name)));});
