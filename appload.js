@@ -29,7 +29,7 @@ function checkFS(){
   }}
 }
 function setBG(){
-  if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")"')";
+  if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
                                     document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}
                                     
 }
