@@ -1,9 +1,9 @@
-* {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAO0lEQVQ4T2P8////fwYKACPVDGBkZCTJHTCHw10wDA0gNnJwhgHVDGAkELoEXTBqAAMD0WGAKyPQ3AAA11dj8YrIDN0AAAAASUVORK5CYII=")!important;
+* {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAO0lEQVQ4T2P8////fwYKACPVDGBkZCTJHTCHw10wDA0gNnJwhgHVDGAkELoEXTBqAAMD0WGAKyPQ3AAA11dj8YrIDN0AAAAASUVORK5CYII=");
 }
-*:hover {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4T92TMQ4AIAgD7f8fjXHASA2mAyy6ocnRQsWgY2bGd2cNAKFuA1Cj4cJkBTIg85wB2DLKANzxtYn1tmfiCj4AXNONgdue67eQRVkOUhsgy4H8F1TABHeqY/GvQh8bAAAAAElFTkSuQmCC")!important;
+*:hover {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4T92TMQ4AIAgD7f8fjXHASA2mAyy6ocnRQsWgY2bGd2cNAKFuA1Cj4cJkBTIg85wB2DLKANzxtYn1tmfiCj4AXNONgdue67eQRVkOUhsgy4H8F1TABHeqY/GvQh8bAAAAAElFTkSuQmCC");
 }
-*:active {cursor:url("loader1.gif")!important;}
-*:focus {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAQCAYAAAA1Qw7OAAAAJklEQVQoU2P8////fwYsgJGgBCMjI1gfzAC4jlEJjCBBD2CcoQsAuhlj0QVKfv4AAAAASUVORK5CYII=")!important;
+*:active {cursor:url("loader1.gif");}
+*:focus {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAQCAYAAAA1Qw7OAAAAJklEQVQoU2P8////fwYsgJGgBCMjI1gfzAC4jlEJjCBBD2CcoQsAuhlj0QVKfv4AAAAASUVORK5CYII=");
 }
 
 body {margin:0px;padding:0px;}
@@ -46,7 +46,9 @@ button:active {
 }
 
 .osNav {background-color:#F8DACA;color:#d24c03;margin:0px;}
-.osNav button {border:0px none;text-align:left;background:#F8DACA!important;color:#d24c03;padding-left:4px;padding:1px;margin:0px;}
+.osNav button {-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;border:0px none;text-align:left;background-color:#f8daca;border-image:none;color:#d24c03;padding-left:4px;padding:1px;margin:0px;}
 .osNav time {display:inline;background-color:#F8DACA;color:#d24c03;padding-left:4px;margin:0px;}
 .osNav p {display:inline;background-color:#F8DACA;color:#d24c03;padding-left:4px;margin:0px;}
 .osNav meter {display:inline;background-color:#F8DACA;color:#d24c03;padding-left:4px;margin:0px;padding:0px;}
