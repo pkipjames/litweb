@@ -45,7 +45,7 @@ button:active {
 	top:1px;
 }
 
-.osNav {width:100%;margin:0px;padding:0px;display:inline;background-color:#F8DACA;color:#d24c03;margin:0px;}
+.osNav {height:30px;font-size:18px;width:100%;margin:0px;padding:0px;display:inline;background-color:#F8DACA;color:#d24c03;margin:0px;}
 .osNav button {-moz-border-radius:0px;
 	-webkit-border-radius:0px;
 	border-radius:0px;border:0px none;display:inline;text-align:left;background-color:#f8daca;border-image:none;color:#d24c03;padding-left:4px;padding:1px;margin:0px;}
