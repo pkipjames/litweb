@@ -46,7 +46,7 @@
 <body onload="checkFS();setBG();runAppMenu();resizeOS();" onorientationchange="resizeOS();" onresize="resizeOS();">
 
 
-<div class="osNav" id="navbar">
+<div style="display:inline;" class="osNav" id="navbar">
 <ul style="display:inline;">
 <li><a target="appwindow" href="page.html">Apps</a>
 	<ul id="appsMenu">
@@ -62,7 +62,7 @@
 	<button class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
 <button class="special nav"
  onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
-	</div>
+	<time class="insertTimeHere"></time><span class="statusBarForOS"></span></div>
 	<iframe src="desktop.html" style="border:0px none;padding:0px;margin:0px;" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 </body>
 </html>
