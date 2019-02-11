@@ -58,9 +58,10 @@
 </ul>
 
 	<a href="desktop.html" target="appwindow"><button>Desktop</button></a>
-	<button onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.back();">Back</button>
-	<button onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
-<button onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
+	<button class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.back();">Back</button>
+	<button class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
+<button class="special nav"
+ onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
 	</div>
 	<iframe src="desktop.html" style="border:0px none;padding:0px;margin:0px;" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 </body>
