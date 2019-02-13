@@ -29,7 +29,8 @@ function enterTime(element) {
 		timeStr = timeStr.substring(0, 8);
 		element.textContent = timeStr;
 	}
-	setInterval(updateTime, 500);
+	updateTime();
+	setInterval(updateTime, 600);
 }
 
 function statusBar(element) {
@@ -52,7 +53,10 @@ function statusBar(element) {
 			batteryIndicator.appendChild(level);
 			out.appendChild(batteryIndicator);
 		}
+		element.innerHTML="";
+		element.appendChild(out);
 	}
+	update();
 	setInterval(update, 700);
 }
 function checkFS(){
