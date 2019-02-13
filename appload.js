@@ -37,7 +37,7 @@ function importJS(url){
   document.head.appendChild(scr);
   return scr;
 }
-function enterTime(element) {try{
+function enterTime(element) {
 	function updateTime() {
 		var date = new Date();
 		var timeStr = date.toTimeString();
@@ -46,46 +46,30 @@ function enterTime(element) {try{
 	}
 	updateTime();
 	setInterval(updateTime, 600);
-}catch(err){alert("enterTime\n\n"+err+"\n\n"+element);}
 }
 
-function statusBar(element) {try{
+function statusBar(element) {
 	function update() {try{
-		var out = elt("span", null, "LitWeb ");
 		if (navigator.getBattery) {
 			var batObject = navigator.getBattery();
-			var level = elt("span", null, batObject.level);
-
-			var batteryIndicator = elt("span", null, elt("meter", {
-				value: batObject.level,
-				low: 25,
-				min: 0,
-				max: 100,
-				optimum: 100
-			}));
-			
+			var level = document.querySelector("#batText");
+      var batteryIndicator = document.querySelector("#batMeter");
+batteryIndicator.value=batObject.level;
+      level.textContent=batObject.level+"%";
 			if (batObject.charging) {
 				level.style.color = "#00ff00";
 				level.textContent += " (Charging)";
-			}
-			try{
-			batteryIndicator.appendChild(level);
-			}catch(err3){alert("statusbar update append level to battery: "+err3+level);}
-			try{
-			out.appendChild(batteryIndicator);
-			}catch(err3){alert("statusbar update append batteryIndicator to out: "+err3+level);}
-		}
-		element.innerHTML="";
-		try(
-		element.appendChild(out);
-		}catch(err3){alert("statusbar update append out to element: "+err3);}
+      }else{	
+        level.style.color = "#ffffff";
+           }
+    }
+		
 
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
 
          setInterval(update, 700);
-	}catch(err){alert("statusBar\n\n"+err+"\n\n"+element+"\n\n");}
 
 }
 function checkFS(){
