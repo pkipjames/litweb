@@ -62,7 +62,7 @@
 	<button style="display:inline;" class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
 <button style="display:inline;" class="special nav"
  onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
-	<time style="display:inline;" class="insertTimeHere"></time><span style="display:inline;" class="statusBarForOS"></span></div>
+	<time style="display:inline;" class="insertTimeHere"></time><span style="display:inline;" class="statusBarForOS"><meter id="batMeter" value="0" max="100" min="0" optimum="100" low="25"></meter><span id="batText"></span></span></div>
 	<iframe src="desktop.html" style="border:0px none;padding:0px;margin:0px;" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 </body>
 </html>
