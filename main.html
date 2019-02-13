@@ -43,7 +43,7 @@
 	</script>
 	<link rel="stylesheet" href="theme.css" />
 </head>
-<body onload="checkFS();setBG();runAppMenu();resizeOS();" onorientationchange="resizeOS();" onresize="resizeOS();">
+<body onload="checkFS();setBG();runAppMenu();resizeOS();setTimeout(function (){statusBar(document.querySelector('statusBarForOS'));enterTime(document.querySelector('insertTimeHere'));},100);" onorientationchange="resizeOS();" onresize="resizeOS();">
 
 
 <div style="display:inline;" class="osNav" id="navbar">
