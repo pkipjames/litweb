@@ -90,6 +90,7 @@ function checkFS(){
     var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();
   }}
 }
+
 function setBG(){
   if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
                                     document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}
