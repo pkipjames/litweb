@@ -62,9 +62,10 @@ batteryIndicator.value=batObject.level;
       }else{	
         level.style.color = "#ffffff";
            }
-    }
+    
 		
 						     });
+    }
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
