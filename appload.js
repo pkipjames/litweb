@@ -69,13 +69,13 @@ function statusBar(element) {try{
 			batteryIndicator.appendChild(level);
 			out.appendChild(batteryIndicator);
 		}
-		element.innerHTML="";
+		element.innerHTML="";alert(out);
 		element.appendChild(out);
 	}
 	update();
 
 setInterval(update, 700);
-	}catch(err){alert("statusBar\n\n"+err+"\n\n"+element+"\n\n"+out);}
+	}catch(err){alert("statusBar\n\n"+err+"\n\n"+element+"\n\n");}
 
 }
 function checkFS(){
