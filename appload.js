@@ -74,7 +74,7 @@ function statusBar(element) {try{
 		}
 		element.innerHTML="";
 		element.appendChild(out);\
-	}catch(err2){alert("statusbar update: \n"+err);}
+	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
 
