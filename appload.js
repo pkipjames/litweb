@@ -50,10 +50,12 @@ function enterTime(element) {try{
 }
 
 function statusBar(element) {try{
-	function update() {
-		var out = elt("span", null);
+	function update() {try{
+		var out = elt("span", null, "LitWeb ");
 		if (navigator.getBattery) {
 			var batObject = navigator.getBattery();
+			var level = elt("span", null, batObject.level);
+
 			var batteryIndicator = elt("span", null, elt("meter", {
 				value: batObject.level,
 				low: 25,
@@ -61,20 +63,22 @@ function statusBar(element) {try{
 				max: 100,
 				optimum: 100
 			}));
-			var level = elt("span", null, batObject.level);
+			
 			if (batObject.charging) {
 				level.style.color = "#00ff00";
 				level.textContent += " (Charging)";
 			}
 			batteryIndicator.appendChild(level);
 			out.appendChild(batteryIndicator);
+			
 		}
-		element.innerHTML="";alert(out);
-		element.appendChild(out);
+		element.innerHTML="";
+		element.appendChild(out);\
+	}catch(err2){alert("statusbar update: \n"+err);}
 	}
 	update();
 
-setInterval(update, 700);
+         setInterval(update, 700);
 	}catch(err){alert("statusBar\n\n"+err+"\n\n"+element+"\n\n");}
 
 }
