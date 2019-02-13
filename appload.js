@@ -30,6 +30,9 @@ function elt(name, attributes) {
   }
   return node;
 }
+function convertToPercent(fraction) {
+return (fraction * 100) + '&#37;';
+}
 function importJS(url){
   var scr=document.createElement("script");
   scr.setAttribute("src",url);
@@ -55,7 +58,7 @@ function statusBar(element) {
 			var level = document.querySelector("#batText");
       var batteryIndicator = document.querySelector("#batMeter");
 batteryIndicator.value=batObject.level;
-      level.textContent=batObject.level+"%";
+      level.textContent=convertToPercent(batObject.level)+"%";
 			if (batObject.charging) {
 				level.style.color = "#00ff00";
 				level.textContent += " (Charging)";
