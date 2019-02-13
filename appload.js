@@ -60,7 +60,7 @@ function statusBar(element) {
 batteryIndicator.value=batObject.level;
       level.textContent=convertToPercent(batObject.level)+"%";
 			if (batObject.charging) {
-				level.style.color = "#00ff00";
+				level.style.color = "#ffff00";
 				level.textContent += " (Charging)";
       }else{	
         level.style.color = "#ffffff";
@@ -68,7 +68,7 @@ batteryIndicator.value=batObject.level;
     
 		
 						     });
-    }
+    }else{document.querySelector(".statusBarForOS").style.display="none";}
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
