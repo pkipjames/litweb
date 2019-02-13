@@ -76,7 +76,10 @@ function statusBar(element) {try{
 			}catch(err3){alert("statusbar update append batteryIndicator to out: "+err3+level);}
 		}
 		element.innerHTML="";
+		try(
 		element.appendChild(out);
+						}catch(err3){alert("statusbar update append out to element: "+err3+level);}
+
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
