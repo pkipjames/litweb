@@ -31,7 +31,7 @@ function elt(name, attributes) {
   return node;
 }
 function convertToPercent(fraction) {
-return (fraction * 100) + '&#37;';
+return (fraction * 100);
 }
 function importJS(url){
   var scr=document.createElement("script");
