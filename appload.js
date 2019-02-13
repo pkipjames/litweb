@@ -22,7 +22,39 @@ function importJS(url){
   document.head.appendChild(scr);
   return scr;
 }
+function enterTime(element) {
+	function updateTime() {
+		var date = new Date();
+		var timeStr = date.getTimeString();
+		timeStr = timeStr.substring(0, 8);
+		element.textContent = timeStr;
+	}
+	setInterval(updateTime, 500);
+}
 
+function statusBar(element) {
+	function update() {
+		var out = elt("span", null);
+		if (navigator.getBattery) {
+			var batObject = navigator.getBattery();
+			var batteryIndicator = elt("span", null, elt("meter", {
+				value: batObject.level,
+				low: 25,
+				min: 0,
+				max: 100,
+				optimum: 100
+			}));
+			var level = elt("span", null, batObject.level);
+			if (batObject.charging) {
+				level.style.color = "#00ff00";
+				level.textContent += " (Charging)";
+			}
+			batteryIndicator.appendChild(level);
+			out.appendChild(batteryIndicator);
+		}
+	}
+	setInterval(update, 700);
+}
 function checkFS(){
   if(localStorage.getItem("autoFS")){if(localStorage.getItem("autoFS")=="true"){
     var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();
