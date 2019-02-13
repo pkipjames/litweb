@@ -15,6 +15,21 @@ var appArray=[
   {name:"Mail.com",url:"http://www.mail.com"}
 
 ];
+function elt(name, attributes) {
+  var node = document.createElement(name);
+  if (attributes) {
+    for (var attr in attributes)
+      if (attributes.hasOwnProperty(attr))
+        node.setAttribute(attr, attributes[attr]);
+  }
+  for (var i = 2; i < arguments.length; i++) {
+    var child = arguments[i];
+    if (typeof child == "string")
+      child = document.createTextNode(child);
+    node.appendChild(child);
+  }
+  return node;
+}
 function importJS(url){
   var scr=document.createElement("script");
   scr.setAttribute("src",url);
@@ -25,7 +40,7 @@ function importJS(url){
 function enterTime(element) {try{
 	function updateTime() {
 		var date = new Date();
-		var timeStr = date.getTimeString();
+		var timeStr = date.toTimeString();
 		timeStr = timeStr.substring(0, 8);
 		element.textContent = timeStr;
 	}
@@ -85,21 +100,7 @@ function installApp(name,url){
   console.log(JSON.stringify(appArray));
 
 }
-function elt(name, attributes) {
-  var node = document.createElement(name);
-  if (attributes) {
-    for (var attr in attributes)
-      if (attributes.hasOwnProperty(attr))
-        node.setAttribute(attr, attributes[attr]);
-  }
-  for (var i = 2; i < arguments.length; i++) {
-    var child = arguments[i];
-    if (typeof child == "string")
-      child = document.createTextNode(child);
-    node.appendChild(child);
-  }
-  return node;
-}
+
 function runAppMenu(){try{
 var container=document.querySelector("#appsMenu");
 if(localStorage.getItem("apps")){console.log(localStorage.getItem("apps"));
