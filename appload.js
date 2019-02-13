@@ -51,7 +51,7 @@ function enterTime(element) {
 function statusBar(element) {
 	function update() {try{
 		if (navigator.getBattery) {
-			var batObject = navigator.getBattery();
+			 navigator.getBattery().then(function (batObject){
 			var level = document.querySelector("#batText");
       var batteryIndicator = document.querySelector("#batMeter");
 batteryIndicator.value=batObject.level;
@@ -64,7 +64,7 @@ batteryIndicator.value=batObject.level;
            }
     }
 		
-
+						     });
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
 	update();
