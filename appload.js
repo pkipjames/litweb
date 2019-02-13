@@ -68,9 +68,12 @@ function statusBar(element) {try{
 				level.style.color = "#00ff00";
 				level.textContent += " (Charging)";
 			}
+			try{
 			batteryIndicator.appendChild(level);
+			}catch(err3){alert("statusbar update append level to battery: "+err3+level);}
+			try{
 			out.appendChild(batteryIndicator);
-			
+			}catch(err3){alert("statusbar update append batteryIndicator to out: "+err3+level);}
 		}
 		element.innerHTML="";
 		element.appendChild(out);
