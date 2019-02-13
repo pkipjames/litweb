@@ -46,7 +46,7 @@ function enterTime(element) {try{
 	}
 	updateTime();
 	setInterval(updateTime, 600);
-}catch(err){alert(err+"\n\n"+element);}
+}catch(err){alert("enterTime\n\n"+err+"\n\n"+element);}
 }
 
 function statusBar(element) {try{
@@ -75,7 +75,7 @@ function statusBar(element) {try{
 	update();
 
 setInterval(update, 700);
-	}catch(err){alert(err+"\n\n"+element);}
+	}catch(err){alert("statusBar\n\n"+err+"\n\n"+element+"\n\n"+out);}
 
 }
 function checkFS(){
