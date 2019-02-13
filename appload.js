@@ -78,7 +78,7 @@ function statusBar(element) {try{
 		element.innerHTML="";
 		try(
 		element.appendChild(out);
-						}catch(err3){alert("statusbar update append out to element: "+err3+level);}
+		}catch(err3){alert("statusbar update append out to element: "+err3);}
 
 	}catch(err2){alert("statusbar update: \n"+err2);}
 	}
