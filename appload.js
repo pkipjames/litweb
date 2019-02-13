@@ -22,7 +22,7 @@ function importJS(url){
   document.head.appendChild(scr);
   return scr;
 }
-function enterTime(element) {
+function enterTime(element) {try{
 	function updateTime() {
 		var date = new Date();
 		var timeStr = date.getTimeString();
@@ -31,9 +31,10 @@ function enterTime(element) {
 	}
 	updateTime();
 	setInterval(updateTime, 600);
+}catch(err){alert(err+"\n\n"+element);}
 }
 
-function statusBar(element) {
+function statusBar(element) {try{
 	function update() {
 		var out = elt("span", null);
 		if (navigator.getBattery) {
@@ -57,7 +58,10 @@ function statusBar(element) {
 		element.appendChild(out);
 	}
 	update();
-	setInterval(update, 700);
+
+setInterval(update, 700);
+	}catch(err){alert(err+"\n\n"+element);}
+
 }
 function checkFS(){
   if(localStorage.getItem("autoFS")){if(localStorage.getItem("autoFS")=="true"){
