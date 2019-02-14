@@ -1,4 +1,4 @@
-body {background: #BFAFF9; font-family:Trebuchet MS;margin:10px}
+body {background: #BFAFF9; font-family:'apple sd gothic neo','helevtica neue',ubuntu,verdana,'Trebuchet MS',sans-serif;margin:10px}
 
 						
 a:link, a:visited {		text-decoration:none;
@@ -7,20 +7,20 @@ a:link, a:visited {		text-decoration:none;
 
 						
 #navbar li 			{	
-						background:#F8DACA;
+						background:#000000;
 						text-align:left;
 						padding-left:4px}
 
 
 
 
-#navbar li:hover {	border-left:.1em solid #f86210;
+#navbar li:hover {	border-left:.1em solid #ff;
 					padding-left:2px}
 
 #navbar li:hover ul{
-					background:#F8DACA;
-					border-bottom:.1em solid #F86210;
-					border-left:.15em solid #F86210;
+					background:rgba(0,0,0,0.3);
+					border-bottom:.1em solid #c0c0c0;
+					border-left:.15em solid #c0c0c0;
 					margin-left:-.25em;
 					}
 					
