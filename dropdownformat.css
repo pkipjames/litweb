@@ -7,14 +7,14 @@ a:link, a:visited {		text-decoration:none;
 
 						
 #navbar li 			{	
-						background:#000000;
+						background:rgba(0,0,0,0.3);
 						text-align:left;
 						padding-left:4px}
 
 
 
 
-#navbar li:hover {	border-left:.1em solid #ff;
+#navbar li:hover {	border-left:.1em solid #c0c0c0;
 					padding-left:2px}
 
 #navbar li:hover ul{
