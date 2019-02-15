@@ -3,16 +3,16 @@ var appArray=[
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
-{name:"Alexa",url:"https://alexaweb.herokuapp.com/"},
+{name:"Alexa",js:"window.open('alexaapp','https://alexaweb.herokuapp.com/','height=100,width=100,location=no,status=no,titlebar=yes,resizable=no,menubar=no');",url:"javascript:void(0);"},
   {name:"App Store",url:"install.html"},
   {name:"Settings",url:"settings.html"},
   {name:"CB.VU terminal",url:"http://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
-{name:"Web Dictaphone",url:"recordaudio.html"},
-  {name:"Camera",url:"https://webcamera.io/"},
-  {name:"Feedly RSS Reader",url:"https://feedly.com/"},
-  {name:"Appetize.io Mobile Emulator",url:"https://appetize.io/"},
+  {name:"Web Dictaphone",url:"recordaudio.html"},
+  {name:"Camera",url:"http://cam-recorder.com/"},
+  {name:"Plyr Media Player",url:"plyr.html"},
   {name:"Mail.com",url:"http://www.mail.com"}
+	
 
 ];
 function elt(name, attributes) {
