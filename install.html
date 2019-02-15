@@ -8,7 +8,7 @@
 
   </head>
 <body>
-  <span id="appStoreIcon"></span>
+  <span id="appStoreIcons"></span>
 <input type="text/javascript" onblur="var data=JSON.parse(this.value);installApp(data.name,data.value);" placeholder="Insert App Launch JSON code" />
 <button onclick="var name=window.prompt('App Name');var url=window.prompt('App URL');if(name&&url){installApp(name,url);}">Install App By URL</button>
 
