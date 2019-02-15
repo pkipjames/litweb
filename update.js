@@ -11,3 +11,5 @@ localStorage.setItem("osVersion",version);
 location.reload();
 }
 }
+
+setTimeout(function (){checkForUpdates();},10000);
