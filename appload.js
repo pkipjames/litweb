@@ -87,11 +87,14 @@ function setBG(){
                                     document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}
                                     
 }
-function installApp(name,url){
+function installApp(name,url,icon,description){
   appArray=JSON.parse(localStorage.getItem("apps"));
   console.log(JSON.stringify(appArray));
   localStorage.setItem("apps",JSON.stringify(appArray));
-  appArray.push({name:name,url:url});
+	var app={name:name,url:url};
+	if(icon){app["icon"]=icon;}
+	if(description){app["description"]=description;}
+  appArray.push(app);
     console.log(JSON.stringify(appArray));
 
   localStorage.setItem("apps",JSON.stringify(appArray));
