@@ -48,7 +48,7 @@ function enterTime(element) {
 		element.textContent = timeStr;
 	}
 	updateTime();
-	setInterval(updateTime, 600);
+	setInterval(updateTime, 500);
 }
 
 function statusBar(element) {
@@ -73,7 +73,7 @@ batteryIndicator.value=batObject.level;
 	}
 	update();
 
-         setInterval(update, 700);
+         setInterval(update, 600);
 
 }
 function checkFS(){
