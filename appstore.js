@@ -5,7 +5,9 @@ description:"iOS Emulator Application"},
 url:"https://appetize.io/embed/standalone_05tnrmc2uh5vzuhq911b2z1qrg?device=nexus9&scale=75&orientation=landscape&osVersion=9.0&deviceColor=black",
 description:"Android Emulator Application"},
   {name:"Photobarcelona",url:"http://elizabethcastro.com/html6ed/examples/styles-handheld/handheld-adjust.html",
-   description:"Photos Of Barcelona"}
+   description:"Photos Of Barcelona"},
+  {name:"Edgenuity For Students",url:"https://auth.edgenuity.com/Login/Login/Student",icon:"https://auth.edgenuity.com/Login/favicon_iPad144x144.png",description:"Edgenuity School Software, student login"},
+  {name:"OS.JS 2.1.3 demo",url:"https://demo.os-js.org/",description:"OS.JS 2.1.3 demo. OS.JS 2.1.3 cloud os"}
 
 
 ];
