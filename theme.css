@@ -1,10 +1,9 @@
-* {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAO0lEQVQ4T2P8////fwYKACPVDGBkZCTJHTCHw10wDA0gNnJwhgHVDGAkELoEXTBqAAMD0WGAKyPQ3AAA11dj8YrIDN0AAAAASUVORK5CYII=");
+* {cursor:url("maincursor.png");
 }
-*:hover {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4T92TMQ4AIAgD7f8fjXHASA2mAyy6ocnRQsWgY2bGd2cNAKFuA1Cj4cJkBTIg85wB2DLKANzxtYn1tmfiCj4AXNONgdue67eQRVkOUhsgy4H8F1TABHeqY/GvQh8bAAAAAElFTkSuQmCC");
+*:hover {cursor:url("hovercursor.png");
 }
-*:active {cursor:url("loader1.gif");}
-*:focus {cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAQCAYAAAA1Qw7OAAAAJklEQVQoU2P8////fwYsgJGgBCMjI1gfzAC4jlEJjCBBD2CcoQsAuhlj0QVKfv4AAAAASUVORK5CYII=");
-}
+*:active {cursor:url("clickcursor.gif");}
+*:focus {cursor:url("hovercursor.png");}
 /* cyrillic-ext */
 @font-face {
   font-family: 'Ubuntu';
