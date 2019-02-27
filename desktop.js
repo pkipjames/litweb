@@ -1,0 +1,1 @@
+/*desktop javascript code*/
