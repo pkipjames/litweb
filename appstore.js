@@ -13,10 +13,11 @@ function runAppStore(){try{
 var container=document.querySelector("#appStoreIcons");
 
 
-appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";
+appArray.forEach(function (item){
+  var icon=item.icon||"placeholderapp.png";
 container.appendChild(elt("div",null,
 elt("img",{height:100,alt:"icon",src:icon}),
-elt("p",null,item.description,elt("button",{onclick:function (){installApp(item.name,item.url,item.icon},"Install Application"));
+elt("p",null,item.description,elt("button",{onclick:function (){installApp(item.name,item.url,item.icon}},"Install Application")));
 });
 }catch(err){alert(err);}
 
