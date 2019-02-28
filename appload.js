@@ -84,7 +84,9 @@ function checkFS(){
 
 function setBG(){
   if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
-                                    document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}
+                                    document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}else{
+					    doSetBG("wallpaper1.jpg");
+				    }
                                     
 }
 function doSetBG(url){
@@ -115,7 +117,7 @@ appArray=JSON.parse(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
-appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",null,elt("img",{height:20,alt:"icon",src:icon}),elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",null,elt("img",{height:20,alt:"icon",src:icon}),elt("a",{href:item.url,target:"appwindow"},item.name)));}});
+appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",{style:"list-style-image:url(\""+icon+"\");list-style-position:inside;"},elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",null,elt("img",{height:20,alt:"icon",src:icon}),elt("a",{href:item.url,target:"appwindow"},item.name)));}});
 }catch(err){alert(err);}
 
 }
