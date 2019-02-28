@@ -10,6 +10,15 @@
 <button onclick="localStorage.setItem('autoFS',window.confirm('Auto Fullscreen'));">Auto Fullscreen</button>
 <button onclick="localStorage.clear();">Reset</button>
   <a href="androidapp.apk" target="_blank"><button type="button">Get Andoid App .apk File (Android App Package)</button></a>
-  <label for="bgset">Desktop Background</label><input id="bgset" type="file" onchange="var read=new FileReader();read.onload=function (event){localStorage.setItem('bgimg',read.result);};read.readAsDataURL(this.files[0]);" />
+  <hr/>
+  <fieldset><legend>Desktop Background</legend>
+   <div>
+     <img src="wallpaper1.jpg" onclick="doSetBG('wallpaper1.jpg');" alt="wallpaper 1"/><br/>
+     <img src="wallpaper2.png" onclick="doSetBG('wallpaper2.png');" alt="wallpaper 2"/><br/>
+     <img src="wallpaper3.png" onclick="doSetBG('wallpaper3.png');" alt="wallpaper 3"/><br/>
+
+     
+     
+     <label for="bgset">Choose File</label><input id="bgset" type="file" onchange="var read=new FileReader();read.onload=function (event){localStorage.setItem('bgimg',read.result);};read.readAsDataURL(this.files[0]);" />
 </body>
 </html>
