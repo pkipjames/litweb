@@ -41,14 +41,26 @@
 		}
 		
 	</script>
+	<script src="showscreen.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="showscreen.css" type="text/css" />
 	<script type="text/javascript">
 				addEventListener("fullscreenchange",function (){resizeOS();});
 
 	</script>
 	<link rel="stylesheet" href="theme.css" />
 </head>
-<body onload="try{checkFS();setBG();runAppMenu();resizeOS();setTimeout(function (){try{statusBar(document.querySelector('.statusBarForOS'));enterTime(document.querySelector('.insertTimeHere'));}catch(err2){alert(err2);}},100);}catch(err){alert(err);}" onorientationchange="resizeOS();" onresize="resizeOS();">
-
+<body onload="try{checkFS();setBG();runAppMenu();resizeOS();setTimeout(function (){try{statusBar(document.querySelector('.statusBarForOS'));enterTime(document.querySelector('.insertTimeHere'));}catch(err2){alert(err2);}},100);
+	      setTimeout(function (showScreen('desktop');},5000);}catch(err){alert(err);}" onorientationchange="resizeOS();" onresize="resizeOS();">
+<section id="boot" class="screen" style="background-image:url('loadbg.gif');background-repeat: no-repeat;background-attachment: fixed;background-position: center;background-size:cover;">
+	<h1>LitWeb</h1>
+	
+	
+</section>
+	
+	
+	
+	
+<section class="screen" id="desktop" style="display:none;">
 
 <div style="display:inline;" class="osNav" id="navbar">
 <ul style="display:inline;">
@@ -68,5 +80,11 @@
  onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
 	<time style="display:inline;" class="insertTimeHere"></time><span style="display:inline;" class="statusBarForOS"><meter id="batMeter" value="0" max="1" min="0" optimum="1" low="0.25" step="0.01"></meter><span id="batText"></span></span></div>
 	<iframe src="desktop.html" style="border:0px none;padding:0px;margin:0px;" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
-</body>
+
+	</body>
+</section>
+<section id="screensaver" class="screen" style="display:none;">
+	
+</section>
+	
 </html>
