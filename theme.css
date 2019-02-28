@@ -1,9 +1,9 @@
-* {cursor:url("maincursor.png");
+* {cursor:url("maincursor.png"),auto;
 }
-*:hover {cursor:url("hovercursor.png");
+*:hover {cursor:url("hovercursor.png"),auto;
 }
-*:active {cursor:url("clickcursor.gif");}
-*:focus {cursor:url("hovercursor.png");}
+*:active {cursor:url("clickcursor.gif"),auto;}
+*:focus {cursor:url("hovercursor.png"),auto;}
 /* cyrillic-ext */
 @font-face {
   font-family: 'Ubuntu';
