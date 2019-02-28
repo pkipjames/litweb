@@ -15,13 +15,14 @@ a:link, a:visited {		text-decoration:none;
 
 
 #navbar li:hover {	border-left:.1em solid #c0c0c0;
-					padding-left:2px}
+					padding-left:2px;}
 
 #navbar li:hover ul{
 					background:rgba(0,0,0,0.3);
 					border-bottom:.1em solid #c0c0c0;
 					border-left:.15em solid #c0c0c0;
 					margin-left:-.25em;
+	                                height:50%;
 					}
 					
 #navbar li ul li {	font-size:85%}
