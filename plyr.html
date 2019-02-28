@@ -7,11 +7,11 @@ body {margin:0px;padding:0px;}
 </style>
 <script src="https://cdn.plyr.io/3.4.8/plyr.polyfilled.js"></script>
 <link rel="stylesheet" href="https://cdn.plyr.io/3.4.8/plyr.css">
-<script>var player = new Plyr('#mainPlayer');</script>
+<script>const player = new Plyr(document.getElementById('mainPlayer'));</script>
 </head>
 <body>
-  <input type="file" onchange="var fr=new FileReader();fr.onload=function (){document.getElementById('mainPlayer').src=fr.result;};fr.readAsDataURL(this.files[0]);" />
-  <video poster="placeholder.png" id="mainPlayer"></video>
+  <input type="file" onchange="var fr=new FileReader();fr.onload=function (){document.getElementById('mainPlayer').src=fr.result;document.getElementById('mainPlayer').play();};fr.readAsDataURL(this.files[0]);" />
+  <video id="mainPlayer"></video>
 
 </body>
 </html>
