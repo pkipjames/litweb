@@ -35,8 +35,7 @@
 			f.setAttribute("height",window.innerHeight-30);
 
 			var m=document.querySelector("#appsMenu");
-			m.style.height=window.innerHeight-(30+10);
-			m.style.overflow="scroll";
+			
 			try{m.querySelectorAll("li").forEach(function (itemx){itemx.style.overflow="ellipsis";});}catch(err){}
 		}
 		
