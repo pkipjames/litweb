@@ -99,3 +99,10 @@ button.nav {-moz-border-radius:0px;
 .osNav p {display:inline;background-color:rgba(0,0,0,0.3);color:#ffffff;padding-left:4px;margin:0px;}
 .osNav meter {display:inline;background-color:rgba(0,0,0,0.3);color:#ffffff;padding-left:4px;margin:0px;padding:0px;}
 .osNav span {background-color:rgba(0,0,0,0.3);color:#ffffff;padding-left:4px;margin:0px;}
+
+::selection {
+  background: #000000;color:#ffffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #000000;color:#ffffff; /* Gecko Browsers */
+}
