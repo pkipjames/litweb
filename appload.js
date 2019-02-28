@@ -87,6 +87,9 @@ function setBG(){
                                     document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}
                                     
 }
+function doSetBG(url){
+localStorage.setItem("bgimg",url);	
+}
 function installApp(name,url,icon,description){
   appArray=JSON.parse(localStorage.getItem("apps"));
   console.log(JSON.stringify(appArray));
