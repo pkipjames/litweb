@@ -23,6 +23,7 @@ a:link, a:visited {		text-decoration:none;
 					border-left:.15em solid #c0c0c0;
 					margin-left:-.25em;
 	                                height:50%;
+	overflow:scroll;
 					}
 					
 #navbar li ul li {	font-size:85%}
