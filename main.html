@@ -51,16 +51,12 @@
 </head>
 <body onload="try{checkFS();setBG();runAppMenu();resizeOS();setTimeout(function (){try{statusBar(document.querySelector('.statusBarForOS'));enterTime(document.querySelector('.insertTimeHere'));}catch(err2){alert(err2);}},100);
 	      setTimeout(function (showScreen('desktop');},5000);}catch(err){alert(err);}" onorientationchange="resizeOS();" onresize="resizeOS();">
-<section id="boot" class="screen" style="background-image:url('loadbg.gif');background-repeat: no-repeat;background-attachment: fixed;background-position: center;background-size:cover;">
-	<h1>LitWeb</h1>
-	
-	
-</section>
+
 	
 	
 	
 	
-<section class="screen" id="desktop" style="display:none;">
+<section class="screen" id="desktop" style="">
 
 <div style="display:inline;" class="osNav" id="navbar">
 <ul style="display:inline;">
