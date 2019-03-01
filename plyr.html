@@ -11,7 +11,7 @@ body {margin:0px;padding:0px;}
 </head>
 <body>
   <input type="file" onchange="var fr=new FileReader();fr.onload=function (){document.getElementById('mainPlayer').src=fr.result;document.getElementById('mainPlayer').play();};fr.readAsDataURL(this.files[0]);" />
-  <video id="mainPlayer"></video>
+  <video controls id="mainPlayer"></video>
 
 </body>
 </html>
