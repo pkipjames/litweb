@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plyr</title>
+<style type="text/css">
+body {margin:0px;padding:0px;}
+</style>
+
+<script>
+ function resizeV(){
+   var vid=document.querySelector("#mainPlayer");
+   vid.style.height=window.innerHeight-30;
+   vid.style.width=window.innerWidth;
+   
+   
+ }
+ </script>
+</head>
+<body onload="resizeV();" onpageshow="resizeV();" onorientationchange="resizeV();" onresize="resizeV();">
+  <input style="width:100%;height:30px;margin:0px;padding:0px" type="file" onchange="var fr=new FileReader();fr.onload=function (){document.getElementById('mainPlayer').src=fr.result;document.getElementById('mainPlayer').play();};fr.readAsDataURL(this.files[0]);" />
+  <br/>
+  <video controls id="mainPlayer"></video>
+
+</body>
+</html>
