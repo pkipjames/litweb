@@ -36,7 +36,7 @@ newAppArray.forEach(function (item){
 container.appendChild(elt("div",null,
 elt("img",{height:100,alt:"icon",src:icon}),
                           elt("p",null,item.name),
-elt("p",null,item.description,elt("button",{onclick:function (){installApp(item.name,item.url,item.icon);}},"Install Application"))));
+elt("p",null,item.description,elt("button",{onclick:function (){installApp(window.prompt("Use App Name: ",item.name),item.url,item.icon,item.description);}},"Install Application"))));
 
                       });}catch(err){alert(err);}
 
