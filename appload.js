@@ -10,7 +10,8 @@ var appArray=[
   {name:"Web Dictaphone",url:"recordaudio.html"},
   {name:"Camera",url:"http://cam-recorder.com/"},
   {name:"Media Player",url:"mediaplayer.html"},
-  {name:"Mail.com",url:"http://www.mail.com"}
+  {name:"Mail.com",url:"http://www.mail.com"},
+  {name:"News",url:"news.html"}
 	
 
 ];
