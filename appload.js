@@ -3,14 +3,13 @@ var appArray=[
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
-{name:"Alexa",js:"window.open('alexaapp','https://alexaweb.herokuapp.com/','height=100,width=100,location=no,status=no,titlebar=yes,resizable=no,menubar=no');",url:"javascript:void(0);"},
   {name:"App Store",url:"install.html"},
   {name:"Settings",url:"settings.html"},
   {name:"CB.VU terminal",url:"http://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
   {name:"Camera",url:"http://cam-recorder.com/"},
-  {name:"Plyr Media Player",url:"plyr.html"},
+  {name:"Media Player",url:"mediaplayer.html"},
   {name:"Mail.com",url:"http://www.mail.com"}
 	
 
@@ -85,7 +84,7 @@ function checkFS(){
 function setBG(){
   if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
                                     document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}else{
-					    doSetBG("wallpaper1.jpg");
+					    doSetBG("wallpaper1.jpg");setBG();
 				    }
                                     
 }
@@ -117,7 +116,7 @@ appArray=JSON.parse(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
-appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",{style:"list-style-image:url(\""+icon+"\");list-style-position:inside;"},elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",null,elt("img",{height:20,alt:"icon",src:icon}),elt("a",{href:item.url,target:"appwindow"},item.name)));}});
+appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",{style:"list-style-image:url(\""+icon+"\");list-style-position:inside;"},elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",{style:"list-style-image:url(\""+icon+"\");list-style-position:inside;"},elt("a",{href:item.url,target:"appwindow"},item.name)));}});
 }catch(err){alert(err);}
 
 }
