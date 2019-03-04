@@ -1,4 +1,4 @@
-var version="1.0";
+var version="2.0";
 function checkForUpdates(){
 if(localStorage.getItem("osVersion")){
 var memory=localStorage.getItem("osVersion");
