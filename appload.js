@@ -1,4 +1,6 @@
 var appArray=[
+	{name:"Reload LitWeb",js:"location.reload();",url:"javascript:void(0);"},
+	{name:"Multitasking Mode",url:"multitask.html"},
 {name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
