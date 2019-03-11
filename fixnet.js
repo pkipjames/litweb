@@ -1,18 +1,20 @@
 if (window.applicationCache&&navigator.onLine) {
-  // "Naturally" reload when an update is available
+  if(navigator.onLine!==null){
+  /*"Naturally" reload when an update is available*/
   var reload = false
 
-  window.applicationCache.addEventListener('updateready', () => {
+  window.applicationCache.addEventListener('updateready',function (){
     if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
-      window.applicationCache.swapCache()
+      window.applicationCache.swapCache();
       reload = true
     }
-  }, false)
+  }, false);
 
-  setInterval(() => {
+  setInterval(function(){
     try {
       /* There's nothing to update for first-time load, browser freaks out */
-      window.applicationCache.update()
-    } catch (e) { }
-  }, 1000 * 60 * 60) // Every hour
+      window.applicationCache.update();
+    } catch (err) {console.log(err);}
+  }, 1000 * 60 * 60) /*Every hour*/
+  }
 }
