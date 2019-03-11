@@ -1,4 +1,6 @@
 CACHE MANIFEST
+#LitWeb Cache Manifest
+#Version 1.0
 wallpaper1.jpg
 wallpaper2.png
 wallpaper3.png
@@ -17,4 +19,9 @@ https://pkipjames.github.io/gameomatic/game1.html
 https://pkipjames.github.io/gameomatic/game2.html
 recordaudio.html
 fixnet.js
+
+NETWORK:
+update.js
+
+FALLBACK:
 update.js
