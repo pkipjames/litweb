@@ -73,7 +73,7 @@
 	<button style="display:inline;" class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.forward();">Forward</button>
 <button style="display:inline;" class="special nav"
  onclick="var game=document.body;game.requestFullScreen=game.requestFullScreen||game.webkitRequestFullScreen||game.mozRequestFullScreen||game.oRequestFullScreen||game.msRequestFullScreen;game.requestFullScreen();">Full Screen</button>
-	<img onclick="window.open('https://alexaweb.herokuapp.com/','_blank','height=500,width=500,status=no,menubar=no,location=no');" alt="alexa" src="https://seeklogo.com/images/A/amazon-alexa-logo-D1BE24A213-seeklogo.com.png" height="16" />
+	<img onclick="var topDist=(window.innerHeight-500)/2;var leftDist=(window.innerWidth-500)/2;window.open('https://alexaweb.herokuapp.com/','_blank','height=500,width=500,status=no,menubar=no,location=no,top='+topDist+',left='+leftDist+'');" alt="alexa" src="alexaicon" height="16" />
 	<time style="display:inline;" class="insertTimeHere"></time><span style="display:inline;" class="statusBarForOS"><meter id="batMeter" value="0" max="1" min="0" optimum="1" low="0.25" step="0.01"></meter><span id="batText"></span></span></div>
 	<iframe src="desktop.html" style="border:0px none;padding:0px;margin:0px;" name="appwindow" id="appwindow1" class="content" height="*" width="*"><h1>Error</h1></iframe>
 
