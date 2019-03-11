@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>News</title>
+  <meta name="robots" content="noindex" />
+    <script>
+      function resizeIt(){
+        var f1=document.querySelectorAll("iframe");
+	f1.forEach(function (itemx){
+        itemx.setAttribute("height",window.innerHeight);
+        itemx.setAttribute("width",window.innerWidth);
+	});
+      
+      }
+	  </script><script>
+	    function addItem(){
+		    document.body.innerHTML+='<br/><iframe src="index.html" height="*" width="*" style="background-color:rgba(255,255,255,0.8);margin:0px;padding:0px;border:0px none;"></iframe>';
+	    }
+    </script>
+    <style type="text/css">
+      body {margin:0px;padding:0px;}
+    
+    
+    
+    </style>
+  </head>
+  <body onload="resizeIt();" onresize="resizeIt();" onorientationchange="resizeIt();" onpageshow="resizeIt();">
+        
+	  <iframe src="index.html" height="*" width="*" style="background-color:rgba(255,255,255,0.8);margin:0px;padding:0px;border:0px none;"></iframe>
+<br/>
+	  <iframe src="index.html" height="*" width="*" style="background-color:rgba(255,255,255,0.8);margin:0px;padding:0px;border:0px none;"></iframe>
+	  <p onclick="addItem">Add Item</p>
+	</body>
+</html>
