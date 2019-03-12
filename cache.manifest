@@ -1,6 +1,6 @@
 CACHE MANIFEST
 #LitWeb Cache Manifest
-#Version 2.0
+#Version 3.0
 icon.png
 wallpaper1.jpg
 wallpaper2.png
@@ -8,6 +8,7 @@ wallpaper3.png
 alexaicon.png
 appload.js
 appstore.js
+manifest1.json
 theme.css
 dropdownformat.css
 dropdownonly.css
