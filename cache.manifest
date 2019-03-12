@@ -24,9 +24,8 @@ https://pkipjames.github.io/gameomatic/game1.html
 https://pkipjames.github.io/gameomatic/game2.html
 recordaudio.html
 fixnet.js
-
+makelinkswork.js
 NETWORK:
 update.js
 
 FALLBACK:
-update.js
