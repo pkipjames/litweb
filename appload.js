@@ -60,8 +60,8 @@ function statusBar(element) {
 			var level = document.querySelector("#batText");
       var batteryIndicator = document.querySelector("#batMeter");
 batteryIndicator.value=batObject.level;
-				 batteryIndicator.setAttribute(Math.round(convertToPercent(batObject.level))+"%"+" battery power, "+String(batObject.dischargingTime/60)+" minutes left on battery.");
-      level.textContent=Math.round(convertToPercent(batObject.level))+"%";
+				 batteryIndicator.setAttribute("title",String(Math.round(parseFloat(convertToPercent(batObject.level))))+"%"+" battery power, "+String(batObject.dischargingTime/60)+" minutes left on battery.");
+      level.textContent=String(Math.floor(parseFloat(convertToPercent(batObject.level))))+"%";
 			if (batObject.charging) {
 				level.style.color = "#ffff00";
 				batteryIndicator.setAttribute("title",batteryIndicator.getAttribute("title")+" Charging, "+String(batObject.chargingTime/60)+" minutes until charged.");
