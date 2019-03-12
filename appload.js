@@ -119,7 +119,7 @@ appArray=JSON.parse(localStorage.getItem("apps"));
 localStorage.setItem("apps",JSON.stringify(appArray));console.log(localStorage.getItem("apps"));
 }
 
-appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",{style:""},elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{container.appendChild(elt("li",{style:""},elt("a",{href:item.url,target:"appwindow"},item.name)));}});
+appArray.forEach(function (item){var icon=item.icon||"placeholderapp.png";if(item.js){container.appendChild(elt("li",{style:""},elt("a",{href:item.url,onclick:item.js,target:"appwindow"},item.name)));}else{try{if(window.applicationCache){window.applicationCache.add(item.url);}}catch(err1){} container.appendChild(elt("li",{style:""},elt("a",{href:item.url,target:"appwindow"},item.name)));}});
 }catch(err){alert(err);}
 
 }
