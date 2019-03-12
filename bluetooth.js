@@ -1,6 +1,6 @@
-unction bluetoothConnect() {
+function bluetoothConnect() {
   navigator.bluetooth.requestDevice({filters: [{services: ['generic_access']}]})
-	  .then(function(){alert("Connected to: "+device.name});})
+	  .then(function(){alert("Connected to: "+device.name);})
 	  .catch(console.error);
 }
 
