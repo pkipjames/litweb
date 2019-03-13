@@ -16,10 +16,10 @@
 						width:10em;
 						}
 
-#navbar li ul 		{	display:none}
+#navbar #boxLink:empty~li ul 		{	display:none}
 
 
-#navbar li:hover ul{position:absolute;display:block;
+#navbar #boxLink:checked~li ul{position:absolute;display:block;
 					width:10.1em;}
 					
 #navbar li ul li {	float:none;
