@@ -87,8 +87,8 @@ function checkFS(){
 }
 
 function setBG(){
-  if(localStorage.getItem("bgimg")){document.body.style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
-                                    document.body.style.backgroundSize="cover";document.body.style.backgroundPosition="center";}else{
+  if(localStorage.getItem("bgimg")){document.querySelector("#desktop").style.backgroundImage="url('"+localStorage.getItem("bgimg")+"')";
+                                    document.querySelector("#desktop").style.backgroundSize="cover";document.querySelector("#desktop").style.backgroundPosition="center";}else{
 					    doSetBG("wallpaper1.jpg");setBG();
 				    }
                                     
