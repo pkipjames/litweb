@@ -14,10 +14,10 @@ a:link, a:visited {		text-decoration:none;
 
 
 
-#navbar li:hover {	border-left:.1em solid #c0c0c0;
+#navbar #boxLink:checked~li {	border-left:.1em solid #c0c0c0;
 					padding-left:2px;}
 
-#navbar li:hover ul{
+#navbar #boxLink:checked~li ul{
 					background:rgba(0,0,0,0.3);
 					border-bottom:.1em solid #c0c0c0;
 					border-left:.15em solid #c0c0c0;
@@ -31,7 +31,7 @@ a:link, a:visited {		text-decoration:none;
 					
 #navbar li ul li {	font-size:85%}
 					
-#navbar li:hover ul li {border:none;
+#navbar #boxLink:checked~li ul li {border:none;
 						padding:4px}
 						
 #navbar a:hover {		text-decoration:underline}
