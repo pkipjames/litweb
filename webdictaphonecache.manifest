@@ -1,0 +1,6 @@
+CACHE MANIFEST
+scripts/app.js
+scripts/install.js
+scripts/mediaDevices-getUserMedia-polyfill.js
+styles/app.css
+styles/install-button.css
