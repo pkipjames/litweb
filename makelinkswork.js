@@ -13,7 +13,7 @@ if(("standalone" in window.navigator) && window.navigator.standalone){
 	        noddy = noddy.parentNode;
 	    }
 		
-		if(noddy.target='appwindow'&&'href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+		if(noddy.target=='appwindow'&&'href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
 		{
 			event.preventDefault();
 			document.getElementById("appwindow1").setAttribute("src",noddy.href);
