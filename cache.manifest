@@ -12,6 +12,8 @@ wallpaper2.png
 wallpaper3.png
 alexaicon.png
 mediaplayer.html
+cookie.js
+notify.js
 appload.js
 appstore.js
 manifest1.json
@@ -31,5 +33,6 @@ fixnet.js
 makelinkswork.js
 NETWORK:
 update.js
+install.html
 
 FALLBACK:
