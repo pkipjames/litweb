@@ -1,18 +1,21 @@
 var appArray=[
 	{name:"Reload LitWeb",js:"location.reload();",url:"javascript:void(0);"},
 	{name:"Multitasking Mode",url:"multitask.html"},
-{name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
+{name:"VistaSimulator",url:"https://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
+	{name:"Threes JS",url:"https://threesjs.com/"},
+	{name:"Threes is the Bees Knees MP3",url:"https://threesjs.com/threes_bees_knees.mp3"},
+	
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
   {name:"App Store",url:"install.html"},
   {name:"Settings",url:"settings.html"},
-  {name:"CB.VU terminal",url:"http://cb.vu"},
+  {name:"CB.VU terminal",url:"https://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
-  {name:"Camera",url:"http://cam-recorder.com/"},
+  {name:"Camera",url:"https://cam-recorder.com/"},
   {name:"Media Player",url:"mediaplayer.html"},
-  {name:"Mail.com",url:"http://www.mail.com"},
+  {name:"Mail.com",url:"https://www.mail.com"},
   {name:"News",url:"news.html"}
 	
 
