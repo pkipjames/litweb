@@ -1,6 +1,8 @@
 {
   "short_name": "LitWeb",
   "name": "Pkip LitWeb",
+  "display":"fullscreen",
+  "description":"LitWeb Web-based OS-like dashboard with offline mode",
   "icons": [
     {
       "src": "icon.png",
