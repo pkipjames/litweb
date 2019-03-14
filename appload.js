@@ -3,8 +3,8 @@ var appArray=[
 	{name:"Multitasking Mode",url:"multitask.html"},
 {name:"VistaSimulator",url:"https://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
-	{name:"Threes JS",url:"https://threesjs.com/"},
-	{name:"Threes is the Bees Knees MP3",url:"https://threesjs.com/threes_bees_knees.mp3"},
+	{name:"Threes JS",url:"http://threesjs.com/"},
+	{name:"Threes is the Bees Knees MP3",url:"http://threesjs.com/threes_bees_knees.mp3"},
 	
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
