@@ -6,27 +6,7 @@ function checkForUpdates() {
 
         if (memory != litwebversion) {
             if (window.confirm("Update avaible. Update now? (It only takes pretty much 1 page reload)")) {
-                for (var i = 0; i < localStorage.length; i++) {
-                    var key = localStorage.key(i);
-                    if (key != "apps") {
-                        localStorage.removeItem(key);
-                    } else {
-                        /*While the rest are deleted normally, the apps are more delicate. No one wants to have to reinstall all their apps.*/
-                        if (appArray) {
-                            for (var j = 0; j < appArray.length; j++) {
-                                var appsFromStorage = JSON.parse(localStorage.getItem("apps"));
-                                var item = appArray[j];
-                                if (!(item in appsFromStorage)) {
-                                    appsFromStorage.push(item);
-                                }
-
-
-
-                            }
-                        }
-                    }
-
-                }
+               localStorage.clear();
                 try {
                     var appCache = window.applicationCache;
 
