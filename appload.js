@@ -10,7 +10,7 @@ var appArray=[
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
   {name:"App Store",url:"install.html"},
   {name:"Settings",url:"settings.html"},
-  {name:"CB.VU terminal",url:"https://cb.vu"},
+  {name:"CB.VU terminal",url:"http://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
   {name:"Camera",url:"https://cam-recorder.com/"},
