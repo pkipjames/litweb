@@ -1,4 +1,4 @@
-var litwebversion = "6.2";
+var litwebversion = "7.0";
 
 function checkForUpdates() {
     if (localStorage.getItem("osVersion")) {
