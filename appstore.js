@@ -50,7 +50,8 @@ var container=document.querySelector("#appStoreIcons");
 
 newAppArray.forEach(function (item){
   var icon=item.icon||"placeholderapp.png";
-  var mainInstallBTN=elt("button",{onclick:function (){installApp(window.prompt("Use App Name: ",item.name),item.url,item.icon,item.description);}},"Install");
+  var mainInstallBTN=elt("button",null,"Install");
+	mainInstallBTN.addEventListener("click",function (event){installApp(window.prompt("Use App Name: ",item.name),item.url,item.icon,item.description);});
 container.appendChild(elt("div",null,
 elt("img",{height:100,alt:"icon",src:icon}),
                           elt("p",null,item.name),
