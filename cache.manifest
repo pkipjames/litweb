@@ -1,6 +1,6 @@
 CACHE MANIFEST
 #LitWeb Cache Manifest
-#Version 7.0
+#Version 7.1
 icon.png
 clickcursor.gif
 maincursor.png
@@ -15,7 +15,6 @@ mediaplayer.html
 cookie.js
 notify.js
 appload.js
-appstore.js
 manifest1.json
 theme.css
 dropdownformat.css
@@ -34,5 +33,6 @@ makelinkswork.js
 NETWORK:
 update.js
 install.html
+appstore.js
 
 FALLBACK:
