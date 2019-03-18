@@ -24,7 +24,18 @@ description:"Android Emulator Application"},
   {name:"Photobarcelona",url:"http://elizabethcastro.com/html6ed/examples/styles-handheld/handheld-adjust.html",
    description:"Photos Of Barcelona"},
   {name:"Edgenuity For Students",url:"https://auth.edgenuity.com/Login/Login/Student",icon:"https://auth.edgenuity.com/Login/favicon_iPad144x144.png",description:"Edgenuity School Software, student login"},
-  {name:"OS.JS 2.1.3 demo",url:"https://demo.os-js.org/",description:"OS.JS 2.1.3 demo. OS.JS 2.1.3 cloud os"}
+  {name:"OS.JS 2.1.3 demo",url:"https://demo.os-js.org/",description:"OS.JS 2.1.3 demo. OS.JS 2.1.3 cloud os"},
+	{name:"Virtual x86",url:"https://copy.sh/v86/",description:"VM software for x86 cpu"},
+	{name:"VFD",url:"https://vfd.000webhostapp.com/",description:"VFD WebApp",icon:"https://vfd.000webhostapp.com/wp-content/uploads/2018/12/1257503_1-150x150.jpg"},
+	{name:"Bing",url:"http://www.bing.com",description:"Bing"},
+	{name:"Sarahsnotecards",url:"http://www.sarahsnotecards.com/",description:"Sarahs Notecards"},
+	{name:"Clock Tab",url:"http://www.clocktab.com/",description:"Clock Application"},
+
+{name:"Piskel App",url:"https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKCgrLrjCAw/edit",description:"Piskel App image editor",icon:"https://www.piskelapp.com/static/resources/logo_transparent_small_compact.png"},
+
+{name:"Metrognome Music",url:"http://www.itsmetrognome.com/music/",description:"Metrognome's music library"},
+
+{name:"Metrognome",url:"http://www.itsmetrognome.com/",description:"Metrognome Home Page"}
 
 
 ];
