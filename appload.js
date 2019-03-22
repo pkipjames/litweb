@@ -55,7 +55,7 @@ function enterTime(element) {
 	updateTime();
 	setInterval(updateTime, 500);
 }
-
+var notifyPercentage=true;
 function statusBar(element) {
 	function update() {try{
 		if (navigator.getBattery) {
@@ -65,7 +65,24 @@ function statusBar(element) {
 batteryIndicator.value=batObject.level;
 				 batteryIndicator.setAttribute("title",String(Math.round(parseFloat(convertToPercent(batObject.level))))+"%"+" battery power, About "+String(Math.round(batObject.dischargingTime/60))+" minutes left on battery.");
       level.textContent=String(Math.floor(parseFloat(convertToPercent(batObject.level))))+"%";
-			if (batObject.charging) {
+
+				 if(notifyPercentage){
+if(batObject.level<0.25){
+if(notify){
+notify("Low Battery","Your battery is very low. Please charge your device as soon as possible.");
+notifyPercentage=false;
+}else{
+alert("\nLow Battery\n\nYour battery is very low. Please charge your device as soon as possible.\n");
+notifyPercentage=false;
+}
+}
+}else{
+if(batObject.level>0.30){
+notifyPercentage=true;
+}
+}
+				 
+				 if (batObject.charging) {
 				level.style.color = "#ffff00";
 				batteryIndicator.setAttribute("title",batteryIndicator.getAttribute("title")+" Charging, About "+String(Math.round(batObject.chargingTime/60))+" minutes until fully charged.");
 				level.textContent += " (Charging)";
