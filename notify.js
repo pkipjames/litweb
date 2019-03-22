@@ -39,11 +39,11 @@ function elt(name, attributes) {
 }
 
 function displayNotification(name,value){
-var out=document.querySelector("#notifcationHolder");
-var elemento=elt("div",{style:"background-color:rgba(0,0,0,0.3);color:#ffffff"},elt("b",null,name),elt("p",null,value));
+var out=document.querySelector("#notifcationHolder");if(out){
+var elemento=elt("div",{title:"Click to close",style:"background-color:rgba(0,0,0,0.3);color:#ffffff"},elt("b",null,name),elt("p",null,value));
 function closeNotifcation(){elemento.parentNode.removeChild(elemento);}
-element.onclick=closeNotifcation;
+element.addEventListener("click",closeNotifcation);
 setTimeout(closeNotifcation,10000);
-out.appendChild(elemento);
+out.appendChild(elemento);}
 
 }
