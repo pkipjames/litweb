@@ -62,7 +62,12 @@ var container=document.querySelector("#appStoreIcons");
 newAppArray.forEach(function (item){
   var icon=item.icon||"placeholderapp.png";
   var mainInstallBTN=elt("button",null,"Install");
-	mainInstallBTN.addEventListener("click",function (event){installApp(window.prompt("Use App Name: ",item.name),item.url,item.icon,item.description);});
+	mainInstallBTN.addEventListener("click",function (event){installApp(window.prompt("Use App Name: ",item.name),item.url,item.icon,item.description);
+								if(notify){notify("Installed "+item.name,item.name+" has been installed on this device. Please go to Apps>Reload LitWeb to see the app in the menu");}else{
+								alert("Installed "+item.name+"\n\n"+item.name+" has been installed on this device. Please go to Apps>Reload LitWeb to see the app in the menu");
+								}
+								
+								});
 container.appendChild(elt("div",null,
 elt("img",{height:100,alt:"icon",src:icon}),
                           elt("p",null,item.name),
