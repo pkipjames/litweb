@@ -58,7 +58,7 @@
 	</style>
 	<script src="bluetooth.js" type="text/javascript"></script>
 </head>
-<body onload="try{checkFS();setBG();runAppMenu();resizeOS();isBT();setTimeout(function (){try{statusBar(document.querySelector('.statusBarForOS'));enterTime(document.querySelector('.insertTimeHere'));}catch(err2){alert(err2);}},100);}catch(err){alert(err);}" onorientationchange="resizeOS();" onresize="resizeOS();">
+<body onload="try{checkFS();setBG();runAppMenu();resizeOS();isBT();setTimeout(function (){try{statusBar(document.querySelector('.statusBarForOS'));enterTime(document.querySelector('.insertTimeHere'));checkForNotifications();}catch(err2){alert(err2);}},100);}catch(err){alert(err);}" onorientationchange="resizeOS();" onresize="resizeOS();">
 
 	
 	
