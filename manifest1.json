@@ -4,12 +4,8 @@
   "display":"standalone",
   "description":"LitWeb Web-based OS-like dashboard with offline mode",
   "icons": [
-    {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "100x100"
-    },
-    {
+    
+   {
       "src": "icon.png",
       "type": "image/png"
      }
