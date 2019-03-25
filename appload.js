@@ -1,10 +1,10 @@
 var appArray=[
 	{name:"Reload LitWeb",js:"location.reload();",url:"javascript:void(0);"},
 	{name:"Multitasking Mode",url:"multitask.html"},
-{name:"VistaSimulator",url:"https://vistasimulator.com/vista.php"},
+{name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
-	{name:"Threes JS",url:"http://threesjs.com/"},
-	{name:"Threes is the Bees Knees MP3",url:"http://threesjs.com/threes_bees_knees.mp3"},
+	{name:"Threes JS",url:"https://pkipjames.github.io/threesweb/"},
+	{name:"Threes is the Bees Knees MP3",url:"https://pkipjames.github.io/threesweb/threes_bees_knees.mp3"},
 	
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
@@ -13,7 +13,7 @@ var appArray=[
   {name:"CB.VU terminal",url:"http://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
-  {name:"Camera",url:"https://cam-recorder.com/"},
+  {name:"Pixect",url:"https://www.pixect.com/"},
   {name:"Media Player",url:"mediaplayer.html"},
   {name:"Mail.com",url:"https://www.mail.com"},
   {name:"News",url:"news.html"}
