@@ -5,7 +5,7 @@ var appArray=[
 {name:"Malone Browser",url:"malone.html"},
 	{name:"Threes JS",url:"https://pkipjames.github.io/threesweb/"},
 	{name:"Threes is the Bees Knees MP3",url:"https://pkipjames.github.io/threesweb/threes_bees_knees.mp3"},
-	
+	{name:"EarthCam",url:"https://www.earthcam.net/"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
   {name:"App Store",url:"install.html"},
@@ -13,7 +13,7 @@ var appArray=[
   {name:"CB.VU terminal",url:"http://cb.vu"},
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
-  {name:"Pixect",url:"https://www.pixect.com/"},
+  {name:"FabCam",url:"https://fabcam.net/"},
   {name:"Media Player",url:"mediaplayer.html"},
   {name:"Mail.com",url:"https://www.mail.com"},
   {name:"News",url:"news.html"}
