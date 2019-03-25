@@ -16,5 +16,18 @@
 <input type="text" onblur="var data=JSON.parse(this.value);installApp(data.name,data.value);" placeholder="Insert App Launch JSON code" />
 <button onclick="var name=window.prompt('App Name');var url=window.prompt('App URL');if(name&&url){installApp(name,url);}">Install App By URL</button>
 
+  <form action="mailto:pkipcompany@mail.com" method="get">
+    <fieldset>
+      <legend>Email an app (or a website) to add to the LitWeb App Store</legend>
+      <input type="from" placeholder="From" name="from" title="Enter your email here" />
+      <input type="hidden" name="subject" value="submitLitWebApp" />
+      <textarea name="body" placeholder="Body" title="Message">
+        App Name: <br/>
+        App URL: <br/>
+        App Icon URL: <br/>
+        App Description: <br/>
+      </textarea>
+    </fieldset>
+  </form>
 </body>
 </html>
