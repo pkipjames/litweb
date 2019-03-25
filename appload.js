@@ -5,7 +5,7 @@ var appArray=[
 {name:"Malone Browser",url:"malone.html"},
 	{name:"Threes JS",url:"https://pkipjames.github.io/threesweb/"},
 	{name:"Threes is the Bees Knees MP3",url:"https://pkipjames.github.io/threesweb/threes_bees_knees.mp3"},
-	{name:"EarthCam",url:"https://www.earthcam.net/"},
+	{name:"EarthCam",url:"https://www.earthcam.com/"},
 {name:"Jumper",url:"https://pkipjames.github.io/gameomatic/game1.html"},
 {name:"Jumper 2",url:"https://pkipjames.github.io/gameomatic/game2.html"},
   {name:"App Store",url:"install.html"},
