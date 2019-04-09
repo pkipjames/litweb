@@ -5,41 +5,44 @@
 <title>Settings</title>
 <link rel="stylesheet" href="theme.css" />
 <script type="text/javascript" src="appload.js"></script>
-  <script>var deferredPrompt;
-var addBtn = document.querySelector('.add-button');
-    addBtn.style.display = 'none';
-    window.addEventListener('beforeinstallprompt', function (e){
-  /* Prevent Chrome 67 and earlier from automatically showing the prompt*/
-  e.preventDefault();
-  /* Stash the event so it can be triggered later.*/
-  deferredPrompt = e;
-  /* Update UI to notify the user they can add to home screen*/
-  addBtn.style.display = 'block';
-
-  addBtn.addEventListener('click', (e) => {
-    /*hide our user interface that shows our A2HS button*/
-    addBtn.style.display = 'none';
-    /* Show the prompt*/
-    deferredPrompt.prompt();
-    /*Wait for the user to respond to the prompt*/
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the A2HS prompt');
-        } else {
-          console.log('User dismissed the A2HS prompt');
-        }
-        deferredPrompt = null;
-      });
-  });
-});
+  <script>
+    function fillAppList(){
+      var holder=document.querySelector("#appList");
+      holder.innerHTML="";
+      for(var i=0;i<appArray.length;i++){
+       var curItem=appArray[i];
+        if(!curItem.ignore){
+       var delBTN=elt("button",{title:"Delete Item"},"Delete");
+        delBTN.addEventListener("click",function (event){
+          deleteApp(i);
+          fillAppList();
+        });
+        var urlBTN=elt("button",{title:"Change App URL"},"Change App URL");
+        urlBTN.addEventListener("click",function (event){
+            appArray[i].url=prompt("App URL:",appArray[i].url);
+            localStorage.setItem("apps",JSON.stringify(appArray));
+fillAppList();
+        });
+         var nameBTN=elt("button",{title:"Change App Name"},"Change App Name");
+        nameBTN.addEventListener("click",function (event){
+            appArray[i].url=prompt("App Name:",appArray[i].name);
+            localStorage.setItem("apps",JSON.stringify(appArray));
+fillAppList();
+        });
+        holder.appendChild(elt("li",null,delBTN,urlBTN,nameBTN,curItem.name);
+                           
+      }
+     }
+    }
   </script>
  
 </head>
-<body>
+<body onload="setTimeout(function (){fillAppList();},10000);">
 <button onclick="localStorage.setItem('autoFS',window.confirm('Auto Fullscreen'));">Auto Fullscreen</button>
 <button onclick="localStorage.clear();">Reset</button>
   <a href="androidapp.apk" target="_blank"><button type="button">Get Andoid App .apk File (Android App Package)</button></a>
   <hr/>
+  <details><summary>Set Desktop BAckground</summary>
   <fieldset><legend>Desktop Background</legend>
    <div>
      <img src="wallpaper1.jpg" height="100" onclick="doSetBG('wallpaper1.jpg');" alt="wallpaper 1"/><br/>
@@ -49,9 +52,8 @@ var addBtn = document.querySelector('.add-button');
      
      
      <label for="bgset">Choose File</label><input id="bgset" type="file" onchange="var read=new FileReader();read.onload=function (event){localStorage.setItem('bgimg',read.result);};read.readAsDataURL(this.files[0]);" />
-     </fielset>
-    
-      <button class="add-button">Add to home screen</button>
-   
+     </fielset></details>
+    <details><summary>App List</summary>
+      <ul id="appList"><li>Loading</li></ul>   </details>
      </body>
 </html>
