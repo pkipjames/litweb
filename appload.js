@@ -1,6 +1,6 @@
 var appArray=[
-	{name:"Reload LitWeb",js:"location.reload();",url:"javascript:void(0);"},
-	{name:"Multitasking Mode",url:"multitask.html"},
+	{name:"Reload LitWeb",js:"location.reload();",url:"javascript:void(0);",ignore:true},
+	{name:"Multitasking Mode",url:"multitask.html",ignore:true},
 {name:"VistaSimulator",url:"http://vistasimulator.com/vista.php"},
 {name:"Malone Browser",url:"malone.html"},
 	{name:"Threes JS",url:"https://pkipjames.github.io/threesweb/"},
