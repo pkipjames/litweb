@@ -131,7 +131,14 @@ function installApp(name,url,icon,description){
   console.log(JSON.stringify(appArray));
 
 }
-
+function removeItem(items, i){
+  return items.slice(0, i-1).concat(items.slice(i, items.length));
+}
+function deleteItem(index){
+	appArray=removeItem(appArray,index);
+	
+	
+}
 
 function runAppMenu(){try{
 var container=document.querySelector("#appsMenu");
