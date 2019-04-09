@@ -19,13 +19,13 @@
         });
         var urlBTN=elt("button",{title:"Change App URL"},"Change App URL");
         urlBTN.addEventListener("click",function (event){
-            appArray[i].url=prompt("App URL:",appArray[i].url);
+            appArray[i].url=window.prompt("App URL:",appArray[i].url);
             localStorage.setItem("apps",JSON.stringify(appArray));
 fillAppList();
         });
          var nameBTN=elt("button",{title:"Change App Name"},"Change App Name");
         nameBTN.addEventListener("click",function (event){
-            appArray[i].url=prompt("App Name:",appArray[i].name);
+            appArray[i].url=window.prompt("App Name:",appArray[i].name);
             localStorage.setItem("apps",JSON.stringify(appArray));
 fillAppList();
         });
