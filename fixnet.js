@@ -3,10 +3,10 @@ if (window.applicationCache&&navigator.onLine) {
   /*"Naturally" reload when an update is available*/
   var reload = false
 
-  window.applicationCache.addEventListener('updateready',function (){
+  window.addEventListener('load',function (){
     if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
       window.applicationCache.swapCache();
-      reload = true
+      reload = true;
     }
   }, false);
 
