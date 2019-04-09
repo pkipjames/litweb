@@ -1,5 +1,6 @@
-body {cursor:url("maincursor.png"),default;}
+html,* {cursor:url("maincursor.png"),default;}
 a:hover,button:hover,[onclick]:hover,details:hover,input:hover,select:hover,label:hover,canvas:hover {cursor:url("hovercursor.png"),pointer;}
+body *:hover {cursor:url("hovercursor.png"),pointer;}
 a:active,button:active,[onclick]:active,details:active,input:active,select:active,label:active,canvas:active,:active  {cursor:url("clickcursor.gif"),cell;}
 :focus {cursor:url("hovercursor.png"),text;}
 @import url("ubuntufont.css");
