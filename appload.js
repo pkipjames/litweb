@@ -137,7 +137,8 @@ function removeItem(items, i){
 function deleteApp(index){
 	appArray=removeItem(appArray,index);
 	
-	
+	  localStorage.setItem("apps",JSON.stringify(appArray));
+
 }
 
 function runAppMenu(){try{
