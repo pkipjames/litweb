@@ -1,11 +1,11 @@
-var litwebversion = "1.5";
+var litwebversion = "1.6";
 
 function checkForUpdates() {
     if (localStorage.getItem("osVersion")) {
         var memory = localStorage.getItem("osVersion");
 
         if (memory != litwebversion) {
-            if (window.confirm("Update avaible. Update now? (It only takes pretty much 1 page reload)")) {
+            if (window.confirm("Update avaible.\n\nAn update is avaible. Install now?")) {
                localStorage.clear();
                 try {
                     var appCache = window.applicationCache;
