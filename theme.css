@@ -1,6 +1,6 @@
 html,* {cursor:url("maincursor.png"),default;}
-a:hover,button:hover,[onclick]:hover,details:hover,input:hover,select:hover,label:hover,canvas:hover,img:hover,iframe:hover, {cursor:url("hovercursor.png"),pointer;}
-a:active,button:active,[onclick]:active,details:active,input:active,select:active,label:active,canvas:active,:active  {cursor:url("clickcursor.gif"),cell;}
+a:hover,button:hover,[onclick]:hover,details:hover,input:hover,select:hover,label:hover,canvas:hover,img:hover {cursor:url("hovercursor.png"),pointer;}
+a:active,button:active,[onclick]:active,details:active,input:active,select:active,label:active,canvas:active,:active,iframe:hover  {cursor:url("clickcursor.gif"),cell;}
 :focus, input:focus {cursor:url("hovercursor.png"),text;}
 p:hover,article:hover,b:hover,h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover,mark:hover {cursor:Url("textcursor.png"),text;}
 @import url("ubuntufont.css");
