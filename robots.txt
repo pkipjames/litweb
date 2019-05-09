@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /scripts/
 Disallow: /styles/
-Disallow: /store.html
+Disallow: /stoinstallre.html
 Disallow: /multitask.html
