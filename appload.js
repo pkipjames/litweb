@@ -14,7 +14,7 @@ var appArray=[
   {name:"Pixlr Image Editor",url:"https://pixlr.com/editor/"},
   {name:"Web Dictaphone",url:"recordaudio.html"},
   {name:"FabCam",url:"https://fabcam.net/"},
-  {name:"Media Player",url:"mediaplayer.html"},
+  {name:"Plyr Media Player",url:"mediaplayer.html"},
   {name:"Mail.com",url:"https://www.mail.com"},
   {name:"News",url:"news.html"}
 	
