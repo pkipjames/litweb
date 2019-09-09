@@ -2,9 +2,11 @@
 <html>
 <head>
 <title>LitWeb Media Player</title>
-     <script src="https://cdn.plyr.io/3.4.8/plyr.polyfilled.js"></script>
-     <script>var player = new Plyr('#mainPlayer');</script>
-     <link rel="stylesheet" href="https://cdn.plyr.io/3.4.8/plyr.css">
+     <script src="https://cdn.plyr.io/3.4.8/plyr.js"></script>
+
+     <script src="http://cdn.plyr.io/3.4.8/plyr.polyfilled.js"></script>
+     <script>var player = new Plyr("#mainPlayer");</script>
+     <link rel="stylesheet" href="http://cdn.plyr.io/3.4.8/plyr.css">
 
      <meta name="viewport" content="width=device-width">
 
@@ -31,7 +33,7 @@ body {margin:0px;padding:0px;
    <button onclick="document.querySelector('#mainSource').setAttribute('src',document.querySelector('#urlInput').value);document.querySelector('#urlInput').play();">OK</button>
  </div>
   <br/>
-  <video controls playsinline id="mainPlayer">    <source src="happyremix.mp4" id="mainSource" type="video/webm">
+  <video controls playsinline crossorigin id="mainPlayer">    <source src="happyremix.mp4" id="mainSource"/>
 </video>
 
 </body>
