@@ -67,16 +67,22 @@
 <section class="screen" id="desktop" style="">
 <div id="notifcationHolder" style="position:fixed;right:0px;top:0px;margin:0px;padding:0px;"></div>
 <div style="display:inline;" class="osNav" id="navbar">
-<ul style="display:inline;">
+<!--<ul style="display:inline;">
 	<li style="display:inline;"><label for="boxLink"><a href="page.html" target="appwindow">Apps</a></label>
 	<input type="checkbox" id="boxLink" />
 		<ul id="appsMenu" style="z-index:120;position:absolute;">
 	
-	</ul></li>
+	</ul>
+	</li>
 	
 
 
-</ul>
+</ul>-->
+	<details id="mainMenuApp">
+		<summary>Apps</summary>
+		<ul id="appsMenu" style="z-index:120;position:absolute;">
+	
+		</ul></details>
 
 	<a href="desktop.html" style="display:inline;" target="appwindow"><button style="display:inline;" class="special nav">Desktop</button></a>
 	<button style="display:inline;" class="special nav" onclick="var f=document.querySelector('#appwindow1');f.contentWindow.history.back();">Back</button>
