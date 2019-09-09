@@ -78,9 +78,11 @@
 
 
 </ul>-->
-	<details style="background-color:rgba(0,0,0,0.8);color:#ffffff;display:inline;" id="mainMenuApp">
-		<summary>Apps</summary>
-		<ul id="appsMenu" style="z-index:120;position:absolute;">
+	<details style="color:#ffffff;display:inline;" id="mainMenuApp">
+		<summary id="appSummary">Apps</summary>
+		<ul id="appsMenu" onclick="var sum=document.querySelector('#appSummary');sum.click();" style="display:block;overflow:scroll;
+													      z-index:120;position:fixed;
+													      top:30px;bottom:0px;left:0px;width:300px;">
 	
 		</ul></details>
 
