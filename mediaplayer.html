@@ -3,7 +3,7 @@
 <head>
 <title>LitWeb Media Player</title>
      <script src="https://cdn.plyr.io/3.4.8/plyr.polyfilled.js"></script>
-     <script>const player = new Plyr('#player');</script>
+     <script>const player = new Plyr('#mainPlayer');</script>
      <link rel="stylesheet" href="https://cdn.plyr.io/3.4.8/plyr.css">
 
      <meta name="viewport" content="width=device-width">
@@ -27,11 +27,12 @@ body {margin:0px;padding:0px;
 </head>
 <body onload="resizeV();" onpageshow="resizeV();" onorientationchange="resizeV();" onresize="resizeV();">
   <div style="width:100%;height:30px;margin:0px;padding:0px;display:block;background-color:rgba(255,255,255,0.8);"><input style="padding:0px;margin:0px;" type="file" onchange="var fr=new FileReader();fr.onload=function (){document.getElementById('mainPlayer').src=fr.result;document.getElementById('mainPlayer').play();};fr.readAsDataURL(this.files[0]);" />
-   <input id="urlInput" type="url" placeholder="URL of file" style="margin:0px;" onkeyup="if(event.keyCode==13||enevnt.which==13||event.key=='Enter'){document.querySelector('#mainPlayer').setAttribute('src',this.value);document.querySelector('#mainPlayer').play();}" />
-   <button onclick="document.querySelector('#urlInput').setAttribute('src',document.querySelector('#urlInput').value);document.querySelector('#urlInput').play();">OK</button>
+   <input id="urlInput" type="url" placeholder="URL of file" style="margin:0px;" onkeyup="if(event.keyCode==13||enevnt.which==13||event.key=='Enter'){document.querySelector('#mainSource').setAttribute('src',this.value);document.querySelector('#mainSource').play();}" />
+   <button onclick="document.querySelector('#mainSource').setAttribute('src',document.querySelector('#urlInput').value);document.querySelector('#urlInput').play();">OK</button>
  </div>
   <br/>
-  <video controls src="happyremix.mp4" style="background-color:rgba(255,255,255,0.8);" id="mainPlayer"></video>
+  <video controls playsinline id="mainPlayer">    <source src="happyremix.mp4" id="mainSource" type="video/webm">
+</video>
 
 </body>
 </html>
